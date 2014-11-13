@@ -1,0 +1,127 @@
+<!doctype html>
+<html>
+<head>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=1024" />
+	<meta name="apple-mobile-web-app-capable" content="yes" />
+	<title>impress.js presentation</title>
+	<meta name="description" content="impress.js presentation" />
+	<meta name="author" content="Wojciech Michalak" />
+
+	<link href="css/base.css" rel="stylesheet" />
+	<link href="css/solar.css" rel="stylesheet" />
+	<link href="css/animations.css" rel="stylesheet" />
+	<script src="js/jQuery.1.8.0.min.js"></script>
+	<script src="js/fadeinFadeout.js"></script>
+
+	<style>
+	#wrap{
+		position:fixed;; 
+		z-index:-1; 
+		top:0; 
+		left:0; 
+		background-color:black
+	}
+	#wrap img.bgfade{
+		position:absolute;
+		top:0;
+		display:none;
+		z-index:-1
+	}
+	</style>
+
+</head>
+<body>
+
+
+	<div id="wrap">
+		<img class="bgfade" src="images/0.png">
+	</div>
+
+
+</audio>
+<audio id="global_music_effect">
+	<source src="sounds/春光美.mp3" type="audio/wav">
+	</audio>
+	<audio id="secondMusic">
+		<source src="sounds/新闻联播开场曲.mp3" type="audio/wav">
+		</audio>
+		
+<!--
+
+<audio id="global_step_leave_effect">
+			<source src="sounds/flyby.wav" type="audio/wav">
+		</audio>
+
+		<audio id="global_step_enter_effect">
+			<source src="sounds/flyby_inverted.wav" type="audio/wav">
+		
+		
+
+		<audio id="global_substep_enter_effect">
+			<source src="sounds/Swoosh.wav" type="audio/wav">
+		</audio>
+
+	-->
+	<div id="impress" data-rewrite="true">
+			<!-- 
+				Slides with the "skip" class aren't slides but only serve as animation keyframes.
+			-->
+			<div id="prepare" class="slide step" data-scale="30" data-y="-7500" data-rotate="90" data-rotate-y="-30"   data-timed="1"></div>
+
+			<div id="overview" class="slide step"  data-scale="100" data-reset="true" data-timed="6">
+				<p class="title">90531 20周年聚会</p>
+				<p class="subtitle">记忆中的你</p>
+				<p class="subtitle">是永恒的美丽</p>
+
+			</div>
+			<div id="solar" class="slide step"  data-scale="100" data-timed="10">
+				<p class="title">我们的故事 说着那春天</p>
+				<div class="substep info" data-animation="slide_left" data-timed="18" >
+					我们在 <span class="enlarge colorize solar" >秋天</span> 结缘
+					<ul class="enlarge">
+						在<li><span class="colorize sun">春天</span>
+						<li><span class="colorize planets">重聚</span>
+							<li><span class="colorize moons">叙述着</span>
+								<li><span class="colorize sun">20年的光阴</span>
+								</ul>
+							</div>
+							<div class="substep" data-animation="slide_up"  data-timed="10" style='font-color: red;'>
+								公元壹玖玖肆年玖月有近伍拾名青葱少年相聚南京，开始四年的崭新生活；贰零壹肆年他们再次聚首古都，讲述着新的故事
+							</div>
+						</div>
+						<div class="step skip" data-scale="50" data-rotate="0" data-x="-33000" data-rotate-y="0" data-timed="10">
+							<img class="planet" src="images/90531-1994-6.jpg" alt="Sun"/>
+						</div>
+					</div>
+				</div>
+
+
+
+				<script src="js/impress.js"></script>
+				<script src="js/impress-animations.js"></script>
+				<script>
+				var impress = impress();
+				impress.init();
+
+				/*  */
+				var audio = document.getElementById("global_music_effect");
+				audio.addEventListener("ended", function() {
+					var audio2 = document.getElementById("secondMusic");
+					audio2.play();
+				});
+
+				audio.play();
+				/**/
+
+initImages();
+				fadeinOut();
+
+
+				</script>
+
+				
+
+
+			</body>
+			</html>

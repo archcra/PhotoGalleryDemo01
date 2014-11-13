@@ -1,0 +1,131 @@
+<!doctype html>
+<html>
+<head>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=1024" />
+	<meta name="apple-mobile-web-app-capable" content="yes" />
+	<title>impress.js presentation</title>
+	<meta name="description" content="impress.js presentation" />
+	<meta name="author" content="Wojciech Michalak" />
+	<link href="css/base.css" rel="stylesheet" />
+	<link href="css/solar.css" rel="stylesheet" />
+	<link href="css/animations.css" rel="stylesheet" />
+</head>
+<body>
+
+	<audio id="global_music_effect">
+		<source src="sounds/运动员进行曲.mp3" type="audio/wav">
+		</audio>
+		
+
+						<audio id="global_substep_enter_effect">
+							<source src="sounds/Swoosh.wav" type="audio/wav">
+							</audio>
+							<div id="impress" data-rewrite="true" data-transition-duration="1000">
+			<!-- 
+				Slides with the "skip" class aren't slides but only serve as animation keyframes.
+			-->
+			
+
+			<div id="prepare" class="slide step" data-scale="30" data-y="-7500" data-rotate="90" data-rotate-y="-30"   data-timed="1"></div>
+
+
+			
+
+
+			<!--   8 pictures -->
+			<div id="zhaowei" class="slide step" data-scale="0.18" data-x="2500" data-y="5000" data-rotate="0"  >
+				<p class="title">顾桂生-顾老大</p>
+				<img class="planet absolute" src="images/03 顾桂生/顾桂生-01.png" alt="Mercury"/>
+				<div class="substep" data-timed="1"></div>
+
+				<div class="substep" data-animation="swing_left" data-timed="3">
+					快拍，我这<sup>十亿</sup>大单谈得正火<br>
+					
+				</div>
+			</div>
+			<div class="step skip" data-scale="30" data-y="-7500" data-rotate="90" data-rotate-y="-30"></div>
+			<div id="zhaowei-02" class="slide step" data-scale="0.44" data-x="2115" data-y="-7500" data-rotate="87.4"  data-timed="1">
+				<p class="title">锻炼</p>
+				<img class="planet absolute" src="images/03 顾桂生/顾桂生-02.png" alt="Venus"/>
+				<div class="substep" data-timed="1"></div>
+
+				<div class="substep info" data-animation="slide_through" data-timed="3">
+					跑马溜溜的山上<br>
+				</div>
+				<div id="underhearts" class="substep" data-animation="swing_up"  data-timed="6">
+					一 <span class="planets colorize">朵</span>.<br>
+					溜溜 <span class="colorize redhot">的</span> <span class="planets colorize">云</span> <span class="colorize redhot">哟</span><br>
+				
+				</div>
+			</div>
+			<div id="zhaowei-03-skip" class="step skip" data-scale="10"></div>
+			<div id="zhaowei-03" class="slide step" data-x="5000" data-scale="0.46" data-x="2115" data-y="7500" data-rotate="-153.95">
+				<p class="title">旅游</p>
+				<img class="planet absolute" src="images/03 顾桂生/顾桂生-03.png" alt="Earth"/>
+				<div class="substep info" data-animation="slide_through" data-timed="3">
+					还有<br>
+					多远<br>哪？
+				</div>
+				<div class="substep info" id="speedy" data-animation="upside_down_flip" data-timed="6">
+					攀登高峰望故乡 黄沙万里长 
+  <br>
+					<div class="substep absolute hidden" data-animation="slide_through" data-timed="3">何处传来<br></div>
+					<div class="substep absolute hidden" data-animation="slide_through" data-timed="3">驼铃声<br></div>
+					<div class="substep absolute" data-animation="slide_right" data-timed="5">声声敲心坎<br></div>
+
+				</div>
+			</div>
+			<div class="step skip" data-scale="10" data-y="-2500" data-rotate="180"></div>
+			<div id="zhaowei-04" class="slide step" data-scale="0.24" data-x="3334" data-y="-2500" data-rotate="180.53" data-rotate-x="15">
+				<p class="title">生活</p>
+				<img class="planet absolute" src="images/03 顾桂生/顾桂生-04.png" alt="Mars"/>
+				<div class="substep" data-timed="1"></div>
+
+				<div class="substep info" data-animation="upside_down_flip" data-timed="6">
+					
+
+  <span class="enlarge"></span> 
+					OH YEAH  <div class="substep inline" data-animation="slow_entrance" data-timed="5">OH YEAH</div> 
+				</div>
+				
+			</div>
+			<div class="step skip" data-scale="10" data-y="-2500"></div>
+			<div id="zhaowei-05" class="slide step" data-scale="5.13" data-x="23589" data-y="-2500" data-rotate="-20.9" data-rotate-x="15">
+				<p class="title">给生活多些</p>
+				<img class="planet absolute" src="images/03 顾桂生/顾桂生-05.png" alt="Jupiter"/>
+				<div class="substep" data-timed="1"></div>
+				
+<div class="substep info" data-animation="upside_down_flip" data-timed="3">
+
+					<span class="planets colorize">你</span> 猜 <span class="colorize icecold">我</span> 在<span class="colorize icecold">想什么？</span><br>
+					<div class="substep inline" data-animation="spin_outer" data-timed="5"><span class="redhot bloody">猜不到吧，我不告诉你</span></div>
+				</div>
+
+
+			</div>
+
+			
+			
+
+		<!-- 第十二幅结束 -->
+
+
+
+
+
+
+
+
+
+
+	</div>
+	<script src="js/impress.js"></script>
+	<script src="js/impress-animations.js"></script>
+	<script>
+	var impress = impress();
+	impress.init();
+
+	</script>
+</body>
+</html>

@@ -26,3 +26,16 @@ node_modules
 
 # Users Environment Variables
 .lock-wscript
+
+# All user's photo
+photo
+
+#
+util/source
+util/target
+
+# Mac
+.DS_Store
+
+# Private
+photo

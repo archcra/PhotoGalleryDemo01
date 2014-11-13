@@ -1,0 +1,130 @@
+<html>
+<head>
+ <meta charset="utf-8" />
+
+ <script src="js/jQuery.1.8.0.min.js"></script>
+ <script src="js/fadeinFadeout.js"></script>
+
+ <style>
+ #wrap{
+    position:fixed;; 
+    z-index:-1; 
+    top:0; 
+    left:0; 
+    background-color:black
+}
+#wrap img.bgfade{
+    position:absolute;
+    top:0;
+    display:none;
+    max-width: 100%;
+    z-index:-1
+}
+</style>
+ <link href="css/h1.css" rel="stylesheet" />
+
+</head>
+<body>
+ 
+    <audio id="global_music_effect">
+        <source src="audio/It Is You (I Have Loved).mp3" type="audio/ogg">
+        </audio>
+
+
+
+<!-- Wanted to see how easily marquees could be constructed with CSS:
+     - This demo uses -prefix-free to avoid vendor prefixes
+     - It also requires manual setting of the end text-indent
+     - Everything below the /* Make it pretty */ comment is non-essential
+     - Brought to you by @jonathansampson -->
+     <!-- -->
+     <p class="emboss3 neon" style="text-align:center;">致谢!</p>
+     <p  class="three-D" style="text-align:bottom;font-size:3em;">向 90531 20周年聚会组委会全体成员致以衷心的感谢！</p>
+  <!---->
+     <p class="microsoft marquee">  武，Child 妈妈，顾，涛，延华，梦话王，胖伟，学，大伟，旭，昝，胡，慧，美丽的白沙河，高，厚道人，徐伟     由于时间关系，请大家再走一遍：吕书武，林嵘，顾桂生，张涛，刘英华，王梦华，赵伟，霍永学，黎建伟，严旭，昝慧莹，胡晓艳，刘慧，张彦清，高清森，张春斌，徐伟</h3>
+     </p>
+
+     <p class="microsoft marquee">     
+        
+
+
+       <img   src="images/penguins2.png" alt="Earth"  style="max-height: 150px;"/>
+       <img   src="images/penguins3.png" alt="Earth"  style="max-width: 190px;"/> King Julien: A little to the left!  Mort: My left or your left?  King Julien: Mine, of course. I am king! The lefts are all mine, silly Mort!            http://madagascar.wikia.com/wiki/Gone_in_a_Flash/Transcript
+
+       <img   src="images/01-吕书武-01.JPG" alt="Earth"  class="img-fixed"/>
+       <img   src="images/林嵘-01.png" alt="Earth"  class="img-fixed"/>
+       <img   src="images/顾桂生-01.png" alt="Earth"  class="img-fixed"/>
+       <img   src="images/2201-zhangtao.png" alt="Earth"  class="img-fixed"/>
+       <img   src="images/3701-liuyinghua.png" alt="Earth"  class="img-fixed"/>
+       <img   src="images/2401_wangmenghua.png" alt="Earth"  class="img-fixed"/>
+       <img   src="images/赵伟-01.png" alt="Earth"  class="img-fixed"/>
+       <img   src="images/4001-huoyongxue.png" alt="Earth" class="img-fixed"/>
+       <img   src="images/0601-lijianwei.png" alt="Earth"  class="img-fixed"/>
+       <img   src="images/严旭-01.png" alt="Earth"  class="img-fixed"/>
+       <img   src="images/昝慧莹-05.png" alt="Earth"  class="img-fixed"/>
+       <img   src="images/胡晓燕-01.png" alt="Earth"  class="img-fixed"/>
+       <img   src="images/刘慧-01.png" alt="Earth"  class="img-fixed"/>
+       <img   src="images/1701-zhangyanqing.png" alt="Earth"  class="img-fixed"/>
+       <img   src="images/高清森-01.png" alt="Earth"  class="img-fixed"/>
+       <img   src="images/0201-zhangchunbin.png" alt="Earth"  class="img-fixed"/>
+       <img   src="images/徐伟-01.png" alt="Earth"  class="img-fixed"/>
+   </p>
+
+   <div id="wrap">
+        <img class="bgfade" src="images/penguins2.png">
+    </div>
+
+   <script>
+   var audio = document.getElementById("global_music_effect");
+
+
+   //function 
+
+  var SONGS_COUNT = 4;
+  function getNext(){
+    var index  = -1;
+    return function (){
+      //Total songs
+      if (index == SONGS_COUNT )
+        index = 0;
+      else
+        index++;
+      return index;
+    }
+  }
+
+
+  var songs = [
+  "audio/It Is You (I Have Loved).mp3",
+  "audio/¼¸¶È·ãºì.mp3",
+  "audio/七月.mp3",
+  "audio/城市足印.mp3"
+
+  ];
+
+  var audio = document.getElementById("global_music_effect");
+
+  function playAudio(index){
+    audio.src = songs[index];
+    console.log(audio.src);
+    audio.play();
+
+    audio.addEventListener("ended", function() {
+      playAudio(next());
+    });
+  }
+
+  var next = getNext();
+  audio.play(next());
+
+
+   initImages();
+   fadeinOut();
+   </script>
+
+
+</body>
+
+
+
+</html>

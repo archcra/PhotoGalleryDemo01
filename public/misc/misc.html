@@ -1,0 +1,191 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=1024" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <title>impress.js presentation</title>
+    <meta name="description" content="impress.js presentation" />
+    <meta name="author" content="Wojciech Michalak" />
+
+    <link href="css/base.css" rel="stylesheet" />
+    <link href="css/solar.css" rel="stylesheet" />
+    <link href="css/animations.css" rel="stylesheet" />
+</head>
+
+<body>
+
+    <audio id="global_step_leave_effect">
+        <source src="sounds/flyby.wav" type="audio/wav">
+    </audio>
+    <audio id="global_step_enter_effect">
+        <source src="sounds/flyby_inverted.wav" type="audio/wav">
+    </audio>
+    <audio id="global_music_effect">
+        <source src="sounds/westWay.mp3" type="audio/wav">
+    </audio>
+
+
+    <audio id="global_substep_enter_effect">
+        <source src="sounds/Swoosh.wav" type="audio/wav">
+    </audio>
+    <div id="impress" data-rewrite="true" data-transition-duration="1000">
+        <!-- 
+				Slides with the "skip" class aren't slides but only serve as animation keyframes.
+			-->
+
+
+        <div id="prepare" class="slide step" data-scale="30" data-y="-7500" data-rotate="90" data-rotate-y="-30" data-timed="1"></div>
+
+
+
+
+
+        <!--   8 pictures -->
+        <div id="zhaowei" class="slide step" data-scale="0.18" data-x="2500" data-y="5000" data-rotate="0">
+            <p class="title">02 张春斌</p>
+            <img class="planet absolute" src="images/misc/0201-zhangchunbin.png" alt="Mercury" />
+            <div class="substep" data-timed="5"></div>
+
+
+        </div>
+        <div class="step skip" data-scale="30" data-y="-7500" data-rotate="90" data-rotate-y="-30"></div>
+        <div id="zhaowei-02" class="slide step" data-scale="0.44" data-x="2115" data-y="-7500" data-rotate="87.4">
+            <p class="title">06 黎建伟</p>
+            <img class="planet absolute" src="images/misc/0601-lijianwei.png" alt="Venus" />
+            <div class="substep" data-timed="5"></div>
+
+
+        </div>
+        <div id="zhaowei-03-skip" class="step skip" data-scale="10"></div>
+        <div id="zhaowei-03" class="slide step" data-x="5000" data-scale="0.46" data-x="2115" data-y="7500" data-rotate="-153.95">
+            <p class="title">007 李智晖</p>
+            <img class="planet absolute" src="images/misc/0701-lizhihui.png" alt="Earth" />
+            <div class="substep" data-timed="5"></div>
+
+        </div>
+        <div class="step skip" data-scale="10" data-y="-2500" data-rotate="180"></div>
+
+        <div class="step skip" data-scale="10" data-y="-2500"></div>
+
+
+        <div class="step skip" data-scale="10"></div>
+
+        <div id="zhaowei-06" class="slide step" data-scale="4.31" data-x="27821" data-y="-5000" data-rotate="23.65" data-rotate-x="-15">
+            <p class="title">14 周健</p>
+            <img class="planet" src="images/misc/1401-zhoujian.png" alt="Saturn" />
+            <div class="substep" data-timed="5"></div>
+
+
+        </div>
+        <div class="step skip" data-scale="10"></div>
+        <div id="zhaowei-07" class="slide step" data-scale="1.84" data-x="61795" data-y="5000" data-rotate="71.19" data-rotate-x="-15">
+            <p class="title">17 张彦清</p>
+            <img class="planet" src="images/misc/1701-zhangyanqing.png" alt="Uranus" style="z-index:0;" />
+            <div class="substep" data-timed="5"></div>
+
+        </div>
+        <div class="step skip" data-scale="10"></div>
+        <div id="zhaowei-08" class="slide step" data-scale="1.78" data-x="69743" data-y="5000" data-rotate="-69.12" data-rotate-x="0">
+            <p class="title">20 吕显斌</p>
+            <img class="planet" src="images/misc/2001-lvxianbin.png" alt="Neptune" />
+            <div class="substep" data-timed="5"></div>
+
+        </div>
+
+        <!-- 下面是第9幅图 -->
+        <div id="zhaowei-09" class="slide step" data-scale="0.18" data-x="2500" data-y="5000" data-rotate="0">
+            <p class="title">22 张滔</p>
+            <img class="planet absolute" src="images/misc/2201-zhangtao.png" alt="Mercury" />
+            <div class="substep" data-timed="5"></div>
+
+        </div>
+        <div class="step skip" data-scale="30" data-y="-7500" data-rotate="90" data-rotate-y="-30"></div>
+
+        <div id="zhaowei-10" class="slide step" data-scale="0.44" data-x="2115" data-y="-7500" data-rotate="87.4">
+            <p class="title">24 王梦华</p>
+            <img class="planet absolute" src="images/misc/2401_wangmenghua.png" alt="Venus" />
+            <div class="substep" data-timed="5"></div>
+
+        </div>
+        <div id="zhaowei-11-skip" class="step skip" data-scale="10"></div>
+        <div id="zhaowei-11" class="slide step" data-x="5000" data-scale="0.46" data-x="2115" data-y="7500" data-rotate="-153.95">
+            <p class="title">26 元标</p>
+            <img class="planet absolute" src="images/misc/2601-yuanbiao.png" alt="Earth" />
+            <div class="substep" data-timed="5"></div>
+
+        </div>
+        <div class="step skip" data-scale="10" data-y="-2500" data-rotate="180"></div>
+        <div id="zhaowei-12" class="slide step" data-scale="1.84" data-x="61795" data-y="5000" data-rotate="71.19" data-rotate-x="-15">
+            <p class="title">29 徐猛</p>
+            <img class="planet absolute" src="images/misc/2901-xumeng.png" alt="Mars" />
+            <div class="substep" data-timed="5"></div>
+        </div>
+
+
+
+        <div id="step-n13" class="slide step" data-scale="1.84" data-x="61795" data-y="5000" data-rotate="71.19" data-rotate-x="-15">
+            <p class="title">31 彭宏文</p>
+            <img class="planet absolute" src="images/misc/3101-penghongwen.jpg" alt="Mars" />
+            <div class="substep" data-timed="5"></div>
+        </div>
+        <div id="step-n14" class="slide step" data-scale="1.84" data-x="61795" data-y="5000" data-rotate="71.19" data-rotate-x="-15">
+            <p class="title">32 王莹</p>
+            <img class="planet absolute" src="images/misc/3201-wangying.png" alt="Mars" />
+            <div class="substep" data-timed="5"></div>
+        </div>
+        <div id="step-n15" class="slide step" data-scale="1.84" data-x="61795" data-y="5000" data-rotate="71.19" data-rotate-x="-15">
+            <p class="title">33 罗杰才</p>
+            <img class="planet absolute" src="images/misc/3301-luojiecai.png" alt="Mars" />
+            <div class="substep" data-timed="5"></div>
+        </div>
+        <div id="step-n16" class="slide step" data-scale="1.84" data-x="61795" data-y="5000" data-rotate="71.19" data-rotate-x="-15">
+            <p class="title">37 刘英华</p>
+            <img class="planet absolute" src="images/misc/3701-liuyinghua.png" alt="Mars" />
+            <div class="substep" data-timed="5"></div>
+        </div>
+        <div id="step-n17" class="slide step" data-scale="1.84" data-x="61795" data-y="5000" data-rotate="71.19" data-rotate-x="-15">
+            <p class="title">40 霍永学</p>
+            <img class="planet absolute" src="images/misc/4001-huoyongxue.png" alt="Mars" />
+            <div class="substep" data-timed="5"></div>
+        </div>
+        <div id="step-n18" class="slide step" data-scale="1.84" data-x="61795" data-y="5000" data-rotate="71.19" data-rotate-x="-15">
+            <p class="title">41 侯立江</p>
+            <img class="planet absolute" src="images/misc/4101-houlijiang.png" alt="Mars" />
+            <div class="substep" data-timed="5"></div>
+        </div>
+        <div id="step-n19" class="slide step" data-scale="1.84" data-x="61795" data-y="5000" data-rotate="71.19" data-rotate-x="-15">
+            <p class="title">44 叶正杰</p>
+            <img class="planet absolute" src="images/misc/4401-yezhengjie.png" alt="Mars" />
+            <div class="substep" data-timed="5"></div>
+        </div>
+
+
+
+
+
+
+
+
+        <!-- 第十二幅结束 -->
+
+
+
+
+
+
+
+
+
+
+    </div>
+    <script src="js/impress.js"></script>
+    <script src="js/impress-animations.js"></script>
+    <script>
+        var impress = impress();
+        impress.init();
+    </script>
+</body>
+
+</html>

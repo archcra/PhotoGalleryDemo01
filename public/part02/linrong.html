@@ -1,0 +1,132 @@
+<!doctype html>
+<html>
+<head>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=1024" />
+	<meta name="apple-mobile-web-app-capable" content="yes" />
+	<title>impress.js presentation</title>
+	<meta name="description" content="impress.js presentation" />
+	<meta name="author" content="Wojciech Michalak" />
+
+	<link href="css/base.css" rel="stylesheet" />
+	<link href="css/solar.css" rel="stylesheet" />
+	<link href="css/animations.css" rel="stylesheet" />
+</head>
+<body>
+
+	<audio id="global_step_leave_effect">
+		<source src="sounds/flyby.wav" type="audio/wav">
+		</audio>
+		<audio id="global_step_enter_effect">
+			<source src="sounds/flyby_inverted.wav" type="audio/wav">
+			</audio>
+				<audio id="global_music_effect">
+		<source src="sounds/18烛光里的妈妈.mp3" type="audio/wav">
+		</audio>
+		
+
+						<audio id="global_substep_enter_effect">
+							<source src="sounds/Swoosh.wav" type="audio/wav">
+							</audio>
+							<div id="impress" data-rewrite="true" data-transition-duration="1000">
+			<!-- 
+				Slides with the "skip" class aren't slides but only serve as animation keyframes.
+			-->
+			
+
+			<div id="prepare" class="slide step" data-scale="30" data-y="-7500" data-rotate="90" data-rotate-y="-30"   data-timed="1"></div>
+
+
+			
+
+
+			<!--   8 pictures -->
+			<div id="zhaowei" class="slide step" data-scale="0.18" data-x="2500" data-y="5000" data-rotate="0"  >
+				<p class="title">林嵘</p>
+				<img class="planet absolute" src="images/18 林嵘/林嵘-01.png" alt="Mercury"/>
+				<div class="substep" data-timed="5"></div>
+				
+			</div>
+			<div class="step skip" data-scale="30" data-y="-7500" data-rotate="90" data-rotate-y="-30"></div>
+			<div id="zhaowei-02" class="slide step" data-scale="0.44" data-x="2115" data-y="-7500" data-rotate="87.4"  >
+				<p class="title">   快来，到沙发上来坐会儿吧</p>
+				<img class="planet absolute" src="images/18 林嵘/林嵘-02.png" alt="Venus"/>
+				
+				<div class="substep" data-timed="8"></div>
+
+			</div>
+			<div id="zhaowei-03-skip" class="step skip" data-scale="10"></div>
+			<div id="zhaowei-03" class="slide step" data-x="5000" data-scale="0.46" data-x="2115" data-y="7500" data-rotate="-153.95">
+				<p class="title">OH YEAH</p>
+				<img class="planet absolute" src="images/18 林嵘/林嵘-03.png" alt="Earth"/>
+				<div class="substep" data-timed="1"></div>
+				<div class="substep info" data-animation="upside_down_flip" data-timed="8">
+					
+
+					<span class="enlarge"></span> <div class="substep inline" data-animation="slow_entrance" data-timed="2">OH YEAH</div> 
+				</div>
+
+
+
+
+
+
+			</div>
+			<div class="step skip" data-scale="10" data-y="-2500" data-rotate="180"></div>
+			<div id="zhaowei-04" class="slide step" data-scale="0.24" data-x="3334" data-y="-2500" data-rotate="180.53" data-rotate-x="15">
+				<p class="title">把虾兵也叫来吧</p>
+				<img class="planet absolute" src="images/18 林嵘/林嵘-04.png" alt="Mars"/>
+				<div class="substep" data-timed="6"></div>
+				
+
+
+			</div>
+			<div class="step skip" data-scale="10" data-y="-2500"></div>
+			<div id="zhaowei-05" class="slide step" data-scale="5.13" data-x="23589" data-y="-2500" data-rotate="-20.9" data-rotate-x="15">
+				<p class="title">怎么样？</p>
+				<img class="planet absolute" src="images/18 林嵘/林嵘-05.png" alt="Jupiter"/>
+
+				
+
+				<div class="substep info" data-animation="swing_up" data-timed="6">
+					There Are 3.7 Trillion Fish In The Ocean. They're Looking For One.<br>
+
+
+
+					http://en.wikiquote.org/wiki/Finding_Nemo
+				</div>
+				<div class="substep info" data-animation="slide_through" data-timed="3">
+					这套亲子装<br>
+					象不象Nemo?<br>
+					谁是Nemo? <br>
+				</div>
+				<div class="substep" data-timed="6"></div>
+
+
+			</div>
+
+
+
+
+
+			<!-- 第十二幅结束 -->
+
+
+
+
+
+
+
+
+
+
+		</div>
+		<script src="js/impress.js"></script>
+		<script src="js/impress-animations.js"></script>
+		<script>
+		var impress = impress();
+		impress.init();
+
+		</script>
+	</body>
+	</html>
