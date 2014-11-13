@@ -1,0 +1,178 @@
+<script src="../js/libs/jquery-1.11.0.min.js"></script>
+
+
+<script>
+
+var scenarios = [
+'/prologue/',
+'/open/',
+'/part01/lvshuwu',
+'/intermission/',
+'/part02/liuhui',
+'/misc/',
+'/casting/',
+'/staff/',
+'/credits/'
+]
+
+var personsPart01 = [
+'lvshuwu',
+'yanxu',
+'guguisheng',
+'tanzhengxiong',
+'qihaifeng',
+'zhaowei',
+'yangjie',
+'liujun',
+'gaoqingsen',
+'xiejing',
+'zanhuiying',
+'wangmingxia',
+'xuwei'
+
+];
+
+var personsPart02 = [
+'liuhui',
+'tengyongjin',
+'huxiaoyan',
+'linrong',
+'yuzhigang',
+'wuguangming',
+'zhoulifeng',
+'luojiecai',
+'lizhihui',
+'wangmenghua'
+]
+
+
+function getNextPerson(curPath){
+ var curPerson = curPath.substring(8);
+ console.log('curPerson', curPerson);
+
+ var personSet;
+
+ console.log('curPath-', curPath.substring(0,8) );
+ if (curPath.substring(0,8) == '/part01/')
+  personSet = personsPart01;
+else
+  personSet = personsPart02;
+
+
+var nextIndex = personSet.indexOf(curPerson) +1;
+console.log('nextPersonIndex', nextIndex)
+if (nextIndex == personSet.length)
+  return '';
+else
+  return personSet[nextIndex];
+
+}
+
+function getPreviousPerson(curPath){
+ var curPerson = curPath.substring(8);
+ console.log('curPerson', curPerson);
+
+ var personSet;
+
+ console.log('curPath-', curPath.substring(0,8) );
+ if (curPath.substring(0,8) == '/part01/')
+  personSet = personsPart01;
+else
+  personSet = personsPart02;
+
+
+var nextIndex = personSet.indexOf(curPerson) -1  ;
+console.log('previousPersonIndex', nextIndex)
+if (nextIndex == -1 )
+  return '';
+else
+  return personSet[nextIndex];
+
+}
+
+
+function getNextPath(curPath){
+
+  console.log('curPath', curPath,curPath.substring(5,7))
+
+  if (curPath.substring(1,5) == 'part'){
+   var nextPerson = getNextPerson(curPath);
+   console.log('nextPerson', nextPerson);
+   if (nextPerson != '')
+    return curPath.substring(0,8) + nextPerson;
+  else{
+   if (curPath.substring(5,7) == '01')
+     curPath = '/part01/lvshuwu';
+   else 
+     curPath  = '/part02/liuhui';
+
+   console.log('now curPath changed to:', curPath);
+ }
+}
+
+var nextIndex = scenarios.indexOf(curPath) +1;
+console.log('nextIndex', nextIndex)
+if (nextIndex == scenarios.length)
+  return scenarios[0];
+else
+  return scenarios[nextIndex];
+}
+
+function getPreviousPath(curPath){
+ if (curPath.substring(1,5) == 'part'){
+   var previousPerson = getPreviousPerson(curPath);
+   console.log('previousPerson', previousPerson);
+   if (previousPerson != '')
+    return curPath.substring(0,8) + previousPerson;
+  else{
+   if (curPath.substring(5,7) == '01')
+     curPath = '/part01/lvshuwu';
+   else 
+     curPath  = '/part02/liuhui';
+
+   console.log('now curPath changed to:', curPath);
+ }
+}
+
+
+
+var nextIndex = scenarios.indexOf(curPath) -1;
+console.log('previousIndex:', nextIndex);
+if (nextIndex == -1 )
+  return scenarios[scenarios.length - 1];
+else
+  return scenarios[nextIndex];
+}
+
+
+function padDigits(number, digits) {
+  return Array(Math.max(digits - String(number).length + 1, 0)).join(0) + number;
+}
+
+$(document).keypress(function(e) {
+  var curPath = window.location.pathname;
+  console.log('curPath', curPath);
+
+  var key = e.which;
+  console.log('key', key)
+  switch (key)
+  {
+    case 110:
+    console.log("n", window.location);
+    var nextPath = getNextPath(curPath);
+    console.log('nextPath', nextPath)
+    window.location=getNextPath(curPath);
+    break;
+    case 112:
+    console.log("p", window.location);
+    var previousPath = getPreviousPath(curPath);
+    console.log('previousPath', previousPath);
+          window.location=previousPath;
+          break;
+          default:
+          console.log(key);
+          console.log(window.location.pathname, 'curPath', curPath);
+        }
+      });
+
+</script>
