@@ -1,177 +1,204 @@
 <!doctype html>
 <html>
-<head>
-	<meta charset="utf-8" />
-	<meta name="viewport" content="width=1024" />
-	<meta name="apple-mobile-web-app-capable" content="yes" />
-	<title>impress.js presentation</title>
-	<meta name="description" content="impress.js presentation" />
-	<meta name="author" content="Wojciech Michalak" />
 
-	<link href="css/base.css" rel="stylesheet" />
-	<link href="css/solar.css" rel="stylesheet" />
-	<link href="css/animations.css" rel="stylesheet" />
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=1024" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <title>impress.js presentation</title>
+    <meta name="description" content="impress.js presentation" />
+    <meta name="author" content="Wojciech Michalak" />
+
+    <link href="css/base.css" rel="stylesheet" />
+    <link href="css/solar.css" rel="stylesheet" />
+    <link href="css/animations.css" rel="stylesheet" />
 </head>
+
 <body>
 
-	<audio id="global_music_effect">
-		<source src="sounds/上铺的兄弟.mp3" type="audio/wav">
-		</audio>
-		
-	<audio id="global_step_leave_effect">
-		<source src="sounds/flyby.wav" type="audio/wav">
-		</audio>
-		<audio id="global_step_enter_effect">
-			<source src="sounds/flyby_inverted.wav" type="audio/wav">
-			</audio>
-			
+    <audio id="global_music_effect">
+        <source src="sounds/上铺的兄弟.mp3" type="audio/wav">
+    </audio>
 
-						<audio id="global_substep_enter_effect">
-							<source src="sounds/Swoosh.wav" type="audio/wav">
-							</audio>
-							<div id="impress" data-rewrite="true" data-transition-duration="1000">
-			<!-- 
+    <audio id="global_step_leave_effect">
+        <source src="sounds/flyby.wav" type="audio/wav">
+    </audio>
+    <audio id="global_step_enter_effect">
+        <source src="sounds/flyby_inverted.wav" type="audio/wav">
+    </audio>
+
+
+    <audio id="global_substep_enter_effect">
+        <source src="sounds/Swoosh.wav" type="audio/wav">
+    </audio>
+    <div id="impress" data-rewrite="true" data-transition-duration="1000">
+        <!-- 
 				Slides with the "skip" class aren't slides but only serve as animation keyframes.
 			-->
-			
-
-			<div id="prepare" class="slide step" data-scale="30" data-y="-7500" data-rotate="90" data-rotate-y="-30"   data-timed="1"></div>
 
 
-			
-
-
-			<!--   8 pictures -->
-			<div id="zhaowei" class="slide step" data-scale="0.18" data-x="2500" data-y="5000" data-rotate="0"  >
-				<p class="title">谭正雄-谭大将军</p>
-				<img class="planet absolute" src="images/04 谭正雄/谭正雄-01.png" alt="Mercury"/>
-				<div class="substep" data-timed="1"></div>
-
-				<div class="substep" data-animation="swing_left" data-timed="3">
-					老<br>
-					谭<br>
-					于<sup>潭</sup><br>
-					<br>
-				</div>
-				<div class="substep" data-timed="5"></div>
-
-			</div>
-			<div class="step skip" data-scale="30" data-y="-7500" data-rotate="90" data-rotate-y="-30"></div>
-			<div id="zhaowei-02" class="slide step" data-scale="0.44" data-x="2115" data-y="-7500" data-rotate="87.4"  data-timed="1">
-				<p class="title">老特</p>
-				<img class="planet absolute" src="images/04 谭正雄/谭正雄-02.png" alt="Venus"/>
-				<div class="substep" data-timed="1"></div>
-
-				<div class="substep info" data-animation="spin_through" data-timed="2">
-					<br>
-					要打闪光灯的呦
-				</div>
-				<div id="underhearts" class="substep" data-animation="swing_up"  data-timed="5">
-					老 <span class="planets colorize">特</span>.<br>
-					与 <span class="colorize redhot">特</span> <span class="planets colorize">鱼</span> <span class="colorize redhot">特</span><br>
-					
-				</div>
-				<div class="substep" data-timed="5"></div>
-
-			</div>
-			<div id="zhaowei-03-skip" class="step skip" data-scale="10"></div>
-			<div id="zhaowei-03" class="slide step" data-x="5000" data-scale="0.46" data-x="2115" data-y="7500" data-rotate="-153.95">
-				<p class="title">谭特-忐忑</p>
-				<img class="planet absolute" src="images/04 谭正雄/谭正雄-03.png" alt="Earth"/>
-				
-				<div class="substep info" id="speedy" data-animation="upside_down_flip" data-timed="2">
-					<div class="substep absolute hidden" data-animation="slide_through" data-timed="2">嗯<br></div>
-					<div class="substep absolute hidden" data-animation="slide_through" data-timed="2">嗯、哦<br></div>
-					<div class="substep absolute" data-animation="slide_right" data-timed="2">嗯、哦、唉<br></div>
-					<div class="substep absolute" data-animation="slide_right" data-timed="2">嗯、哦、唉、哟……<br></div>
-
-				</div>
-			</div>
-			<div class="step skip" data-scale="10" data-y="-2500" data-rotate="180"></div>
-			<div id="zhaowei-04" class="slide step" data-scale="0.24" data-x="3334" data-y="-2500" data-rotate="180.53" data-rotate-x="15">
-				<p class="title">学习</p>
-				<img class="planet absolute" src="images/04 谭正雄/谭正雄-04.png" alt="Mars"/>
-				<div class="substep" data-timed="1"></div>
-				<div class="substep info" data-animation="upside_down_flip" data-timed="2">
-					<span class="planets colorize">别</span> 忘 <span class="colorize icecold">了</span> 回<span class="colorize icecold">家</span><br>
-					<span class="colorize water">象这石头人一样</span> <br>
-					<div class="substep inline" data-animation="spin_outer" data-timed="5"><span class="redhot bloody">给我修脚啊</span></div>
-				</div>
-				<div class="substep" data-timed="3"></div>
-
-			</div>
-			<div class="step skip" data-scale="10" data-y="-2500"></div>
-			<div id="zhaowei-05" class="slide step" data-scale="5.13" data-x="23589" data-y="-2500" data-rotate="-20.9" data-rotate-x="15">
-				<p class="title">合影</p>
-				<img class="planet absolute" src="images/04 谭正雄/谭正雄-05.png" alt="Jupiter"/>
-				<div class="substep" data-timed="1"></div>
-				<div class="substep info" data-animation="upside_down_flip" data-timed="6">
-					老师 <span class="enlarge">不让</span> 坐 <span class="solar colorize">草地上</span><br>
-					我就坐<div class="substep inline" data-animation="slow_entrance" data-timed="2">你们俩</div>  腿上
-				</div>
+        <div id="prepare" class="slide step" data-scale="30" data-y="-7500" data-rotate="90" data-rotate-y="-30" data-timed="1"></div>
 
 
 
-			</div>
 
-			<div class="step skip" data-scale="10"></div>
 
-			<div id="zhaowei-06" class="slide step" data-scale="4.31" data-x="27821" data-y="-5000" data-rotate="23.65" data-rotate-x="-15">
-				<p class="title">泠泠七弦上</p>
-				<img class="planet" src="images/04 谭正雄/谭正雄-06.png" alt="Saturn"/>
+        <!--   8 pictures -->
+        <div id="zhaowei" class="slide step" data-scale="0.18" data-x="2500" data-y="5000" data-rotate="0">
+            <p class="title">谭正雄-谭大将军</p>
+            <img class="planet absolute" src="photo/04 谭正雄/谭正雄-01.png" alt="Mercury" />
+            <div class="substep" data-timed="1"></div>
 
-				<div class="substep info" data-animation="upside_down_flip" data-timed="5">
-					007弦上，爸爸，为什么我们要快点照啊，我挺舒服的呀？<br>
-					<div class="substep inline" data-timed="0.1" data-animation="slide_left">可</div><div class="substep inline" data-timed="0.1" data-animation="slide_left">是</div><div class="substep inline" data-timed="0.1" data-animation="slide_left">爸</div><div class="substep inline" data-timed="0.1" data-animation="slide_left">爸</div><div class="substep inline" data-timed="0.1" data-animation="slide_left">不</div><div class="substep inline" data-timed="0.1" data-animation="slide_left">是</div><div class="substep inline" data-timed="0.1" data-animation="slide_left">很</div><div class="substep inline" data-timed="0.1" data-animation="slide_left">舒</div><div class="substep inline" data-timed="0.1" data-animation="slide_left">服</div><div class="substep inline" data-timed="0.1" data-animation="slide_left">的</div><div class="substep inline" data-timed="5" data-animation="slide_left">了</div>
-				</div>
+            <div class="substep" data-animation="swing_left" data-timed="3">
+                老
+                <br>谭
+                <br>于
+                <sup>潭</sup>
+                <br>
+                <br>
+            </div>
+            <div class="substep" data-timed="5"></div>
 
-			</div>
-			<div class="step skip" data-scale="10"></div>
-			<div id="zhaowei-07" class="slide step" data-scale="1.84" data-x="61795" data-y="5000" data-rotate="71.19" data-rotate-x="-15">
-				<p class="title">欢笑</p>
-				<img class="planet" src="images/04 谭正雄/谭正雄-07.png" alt="Uranus" style="z-index:0;"/>
-				<div class="substep" data-timed="1"></div>
-				<div class="substep" data-timed="1">
-					<span class="hide">把<br></span>
-					<span class="hide">把<br></span>
-					<span class="hide">把<br></span>
-					<span class="hide">把<br></span>
-					<span class="hide">把<br></span>
-					<span class="hide">爸<br></span>
-					<span class="hide">爸<br></span>
-					<span class="hide">爸<br></span>
-					<span class="hide">爸<br></span>
-					<span class="hide">爸<br></span>
+        </div>
+        <div class="step skip" data-scale="30" data-y="-7500" data-rotate="90" data-rotate-y="-30"></div>
+        <div id="zhaowei-02" class="slide step" data-scale="0.44" data-x="2115" data-y="-7500" data-rotate="87.4" data-timed="1">
+            <p class="title">老特</p>
+            <img class="planet absolute" src="photo/04 谭正雄/谭正雄-02.png" alt="Venus" />
+            <div class="substep" data-timed="1"></div>
 
-				</div>
-				<div class="substep info" data-animation="upside_down_flip_counter"  data-timed="3">
-					那个是给我买的<br>
-					你都玩了好半天了
-					<br>
-				</div>
-				<div class="substep" data-timed="5"></div>
+            <div class="substep info" data-animation="spin_through" data-timed="2">
+                <br>要打闪光灯的呦
+            </div>
+            <div id="underhearts" class="substep" data-animation="swing_up" data-timed="5">
+                老 <span class="planets colorize">特</span>.
+                <br>与 <span class="colorize redhot">特</span>  <span class="planets colorize">鱼</span>  <span class="colorize redhot">特</span>
+                <br>
 
-			</div>
-			<div class="step skip" data-scale="10"></div>
-			<div id="zhaowei-08" class="slide step" data-scale="1.78" data-x="69743" data-y="5000" data-rotate="-69.12" data-rotate-x="0">
-				<p class="title">出游</p>
-				<img class="planet" src="images/04 谭正雄/谭正雄-08.png" alt="Neptune"/>
-				<div class="substep" data-timed="1"></div>
-				<div class="substep" data-animation="upside_down_flip_counter"  data-timed="8"> <!-- upside_down_flip" > -->
-					<span class="hide">你好!</span> <span class="colorize icecold">他们非要我穿上这个</span> <br>
-					你们谁掉水里去吧，我来救你们<br>
-				</div>
-				<!--
+            </div>
+            <div class="substep" data-timed="5"></div>
+
+        </div>
+        <div id="zhaowei-03-skip" class="step skip" data-scale="10"></div>
+        <div id="zhaowei-03" class="slide step" data-x="5000" data-scale="0.46" data-x="2115" data-y="7500" data-rotate="-153.95">
+            <p class="title">谭特-忐忑</p>
+            <img class="planet absolute" src="photo/04 谭正雄/谭正雄-03.png" alt="Earth" />
+
+            <div class="substep info" id="speedy" data-animation="upside_down_flip" data-timed="2">
+                <div class="substep absolute hidden" data-animation="slide_through" data-timed="2">嗯
+                    <br>
+                </div>
+                <div class="substep absolute hidden" data-animation="slide_through" data-timed="2">嗯、哦
+                    <br>
+                </div>
+                <div class="substep absolute" data-animation="slide_right" data-timed="2">嗯、哦、唉
+                    <br>
+                </div>
+                <div class="substep absolute" data-animation="slide_right" data-timed="2">嗯、哦、唉、哟……
+                    <br>
+                </div>
+
+            </div>
+        </div>
+        <div class="step skip" data-scale="10" data-y="-2500" data-rotate="180"></div>
+        <div id="zhaowei-04" class="slide step" data-scale="0.24" data-x="3334" data-y="-2500" data-rotate="180.53" data-rotate-x="15">
+            <p class="title">学习</p>
+            <img class="planet absolute" src="photo/04 谭正雄/谭正雄-04.png" alt="Mars" />
+            <div class="substep" data-timed="1"></div>
+            <div class="substep info" data-animation="upside_down_flip" data-timed="2">
+                <span class="planets colorize">别</span> 忘 <span class="colorize icecold">了</span> 回<span class="colorize icecold">家</span>
+                <br>
+                <span class="colorize water">象这石头人一样</span> 
+                <br>
+                <div class="substep inline" data-animation="spin_outer" data-timed="5"><span class="redhot bloody">给我修脚啊</span>
+                </div>
+            </div>
+            <div class="substep" data-timed="3"></div>
+
+        </div>
+        <div class="step skip" data-scale="10" data-y="-2500"></div>
+        <div id="zhaowei-05" class="slide step" data-scale="5.13" data-x="23589" data-y="-2500" data-rotate="-20.9" data-rotate-x="15">
+            <p class="title">合影</p>
+            <img class="planet absolute" src="photo/04 谭正雄/谭正雄-05.png" alt="Jupiter" />
+            <div class="substep" data-timed="1"></div>
+            <div class="substep info" data-animation="upside_down_flip" data-timed="6">
+                老师 <span class="enlarge">不让</span> 坐 <span class="solar colorize">草地上</span>
+                <br>我就坐
+                <div class="substep inline" data-animation="slow_entrance" data-timed="2">你们俩</div>腿上
+            </div>
+
+
+
+        </div>
+
+        <div class="step skip" data-scale="10"></div>
+
+        <div id="zhaowei-06" class="slide step" data-scale="4.31" data-x="27821" data-y="-5000" data-rotate="23.65" data-rotate-x="-15">
+            <p class="title">泠泠七弦上</p>
+            <img class="planet" src="photo/04 谭正雄/谭正雄-06.png" alt="Saturn" />
+
+            <div class="substep info" data-animation="upside_down_flip" data-timed="5">
+                007弦上，爸爸，为什么我们要快点照啊，我挺舒服的呀？
+                <br>
+                <div class="substep inline" data-timed="0.1" data-animation="slide_left">可</div>
+                <div class="substep inline" data-timed="0.1" data-animation="slide_left">是</div>
+                <div class="substep inline" data-timed="0.1" data-animation="slide_left">爸</div>
+                <div class="substep inline" data-timed="0.1" data-animation="slide_left">爸</div>
+                <div class="substep inline" data-timed="0.1" data-animation="slide_left">不</div>
+                <div class="substep inline" data-timed="0.1" data-animation="slide_left">是</div>
+                <div class="substep inline" data-timed="0.1" data-animation="slide_left">很</div>
+                <div class="substep inline" data-timed="0.1" data-animation="slide_left">舒</div>
+                <div class="substep inline" data-timed="0.1" data-animation="slide_left">服</div>
+                <div class="substep inline" data-timed="0.1" data-animation="slide_left">的</div>
+                <div class="substep inline" data-timed="5" data-animation="slide_left">了</div>
+            </div>
+
+        </div>
+        <div class="step skip" data-scale="10"></div>
+        <div id="zhaowei-07" class="slide step" data-scale="1.84" data-x="61795" data-y="5000" data-rotate="71.19" data-rotate-x="-15">
+            <p class="title">欢笑</p>
+            <img class="planet" src="photo/04 谭正雄/谭正雄-07.png" alt="Uranus" style="z-index:0;" />
+            <div class="substep" data-timed="1"></div>
+            <div class="substep" data-timed="1">
+                <span class="hide">把<br></span>
+                <span class="hide">把<br></span>
+                <span class="hide">把<br></span>
+                <span class="hide">把<br></span>
+                <span class="hide">把<br></span>
+                <span class="hide">爸<br></span>
+                <span class="hide">爸<br></span>
+                <span class="hide">爸<br></span>
+                <span class="hide">爸<br></span>
+                <span class="hide">爸<br></span>
+
+            </div>
+            <div class="substep info" data-animation="upside_down_flip_counter" data-timed="3">
+                那个是给我买的
+                <br>你都玩了好半天了
+                <br>
+            </div>
+            <div class="substep" data-timed="5"></div>
+
+        </div>
+        <div class="step skip" data-scale="10"></div>
+        <div id="zhaowei-08" class="slide step" data-scale="1.78" data-x="69743" data-y="5000" data-rotate="-69.12" data-rotate-x="0">
+            <p class="title">出游</p>
+            <img class="planet" src="photo/04 谭正雄/谭正雄-08.png" alt="Neptune" />
+            <div class="substep" data-timed="1"></div>
+            <div class="substep" data-animation="upside_down_flip_counter" data-timed="8">
+                <!-- upside_down_flip" > -->
+                <span class="hide">你好!</span>  <span class="colorize icecold">他们非要我穿上这个</span> 
+                <br>你们谁掉水里去吧，我来救你们
+                <br>
+            </div>
+            <!--
 				<div class="substep info" data-animation="upside_down_flip_counter">		 	
 					
 				</div> -->
-			</div>
-
-			
-
-		<!-- 第十二幅结束 -->
+        </div>
 
 
+
+        <!-- 第十二幅结束 -->
 
 
 
@@ -180,13 +207,15 @@
 
 
 
-	</div>
-	<script src="js/impress.js"></script>
-	<script src="js/impress-animations.js"></script>
-	<script>
-	var impress = impress();
-	impress.init();
 
-	</script>
+
+    </div>
+    <script src="js/impress.js"></script>
+    <script src="js/impress-animations.js"></script>
+    <script>
+        var impress = impress();
+        impress.init();
+    </script>
 </body>
+
 </html>

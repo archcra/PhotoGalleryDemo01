@@ -1,140 +1,140 @@
 <!doctype html>
 <html>
-<head>
-	<meta charset="utf-8" />
-	<meta name="viewport" content="width=1024" />
-	<meta name="apple-mobile-web-app-capable" content="yes" />
-	<title>impress.js presentation</title>
-	<meta name="description" content="impress.js presentation" />
-	<meta name="author" content="Wojciech Michalak" />
 
-	<link href="css/base.css" rel="stylesheet" />
-	<link href="css/solar.css" rel="stylesheet" />
-	<link href="css/animations.css" rel="stylesheet" />
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=1024" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <title>impress.js presentation</title>
+    <meta name="description" content="impress.js presentation" />
+    <meta name="author" content="Wojciech Michalak" />
+
+    <link href="css/base.css" rel="stylesheet" />
+    <link href="css/solar.css" rel="stylesheet" />
+    <link href="css/animations.css" rel="stylesheet" />
 </head>
+
 <body>
 
-	<audio id="global_step_leave_effect">
-		<source src="sounds/flyby.wav" type="audio/wav">
-		</audio>
-		<audio id="global_step_enter_effect">
-			<source src="sounds/flyby_inverted.wav" type="audio/wav">
-			</audio>
-				<audio id="global_music_effect">
-		<source src="sounds/13滴答.mp3" type="audio/wav">
-		</audio>
-		
+    <audio id="global_step_leave_effect">
+        <source src="sounds/flyby.wav" type="audio/wav">
+    </audio>
+    <audio id="global_step_enter_effect">
+        <source src="sounds/flyby_inverted.wav" type="audio/wav">
+    </audio>
+    <audio id="global_music_effect">
+        <source src="sounds/13滴答.mp3" type="audio/wav">
+    </audio>
 
-						<audio id="global_substep_enter_effect">
-							<source src="sounds/Swoosh.wav" type="audio/wav">
-							</audio>
-							<div id="impress" data-rewrite="true" data-transition-duration="1000">
-			<!-- 
+
+    <audio id="global_substep_enter_effect">
+        <source src="sounds/Swoosh.wav" type="audio/wav">
+    </audio>
+    <div id="impress" data-rewrite="true" data-transition-duration="1000">
+        <!-- 
 				Slides with the "skip" class aren't slides but only serve as animation keyframes.
 			-->
-			
-
-			<div id="prepare" class="slide step" data-scale="30" data-y="-7500" data-rotate="90" data-rotate-y="-30"   data-timed="1"></div>
 
 
-			
+        <div id="prepare" class="slide step" data-scale="30" data-y="-7500" data-rotate="90" data-rotate-y="-30" data-timed="1"></div>
 
 
-			<!--   8 pictures -->
-			<div id="zhaowei" class="slide step" data-scale="0.18" data-x="2500" data-y="5000" data-rotate="0"  >
-				<p class="title">王明霞</p>
-				<img class="planet absolute" src="images/13 王明霞/王明霞-01.png" alt="Mercury"/>
-				<div class="substep" data-timed="5"></div>
-
-				
-			</div>
-			<div class="step skip" data-scale="30" data-y="-7500" data-rotate="90" data-rotate-y="-30"></div>
-			<div id="zhaowei-02" class="slide step" data-scale="0.44" data-x="2115" data-y="-7500" data-rotate="87.4"  >
-				<p class="title">我们比楼高</p>
-				<img class="planet absolute" src="images/13 王明霞/王明霞-02.png" alt="Venus"/>
-				<div class="substep" data-timed="5"></div>
-
-				
-			</div>
-			<div id="zhaowei-03-skip" class="step skip" data-scale="10"></div>
-			<div id="zhaowei-03" class="slide step" data-x="5000" data-scale="0.46" data-x="2115" data-y="7500" data-rotate="-153.95">
-				<p class="title">你们都在吃啥？</p>
-				<img class="planet absolute" src="images/13 王明霞/王明霞-03.png" alt="Earth"/>
-			    <div class="substep" data-timed="5"></div>
-
-			</div>
-			<div class="step skip" data-scale="10" data-y="-2500" data-rotate="180"></div>
-			<div id="zhaowei-04" class="slide step" data-scale="0.24" data-x="3334" data-y="-2500" data-rotate="180.53" data-rotate-x="15">
-				<p class="title">小宝宝</p>
-				<img class="planet absolute" src="images/13 王明霞/王明霞-04.png" alt="Mars"/>
-				<div class="substep" data-timed="5"></div>
-				
-			</div>
-			<div class="step skip" data-scale="10" data-y="-2500"></div>
-			<div id="zhaowei-05" class="slide step" data-scale="5.13" data-x="23589" data-y="-2500" data-rotate="-20.9" data-rotate-x="15">
-				<p class="title">淘气宝宝</p>
-				<img class="planet absolute" src="images/13 王明霞/王明霞-05.png" alt="Jupiter"/>
-				<div class="substep" data-timed="5"></div>
-				
-
-			</div>
-
-			<div class="step skip" data-scale="10"></div>
-
-			<div id="zhaowei-06" class="slide step" data-scale="4.31" data-x="27821" data-y="-5000" data-rotate="23.65" data-rotate-x="-15">
-				<p class="title">累了</p>
-				<img class="planet" src="images/13 王明霞/王明霞-06.png" alt="Saturn"/>
-				<div class="substep" data-timed="5"></div>
-
-				
-			</div>
-			<div class="step skip" data-scale="10"></div>
-			<div id="zhaowei-07" class="slide step" data-scale="1.84" data-x="61795" data-y="5000" data-rotate="71.19" data-rotate-x="-15">
-				<p class="title">花海</p>
-				<img class="planet" src="images/13 王明霞/王明霞-07.png" alt="Uranus" style="z-index:0;"/>
-				<div class="substep" data-timed="5"></div>
-				
-			</div>
-			<div class="step skip" data-scale="10"></div>
-			<div id="zhaowei-08" class="slide step" data-scale="1.78" data-x="69743" data-y="5000" data-rotate="-69.12" data-rotate-x="0">
-				<p class="title">休息，休息一会儿</p>
-				<img class="planet" src="images/13 王明霞/王明霞-08.png" alt="Neptune"/>
-				<div class="substep" data-timed="5"></div>
-				
-			</div>
-
-			<!-- 下面是第9幅图 -->
-			<div id="zhaowei-09" class="slide step" data-scale="0.18" data-x="2500" data-y="5000" data-rotate="0" >
-				<p class="title">这个眼镜能看到海边</p>
-				<img class="planet absolute" src="images/13 王明霞/王明霞-09.png" alt="Mercury"/>
-				<div class="substep" data-timed="5"></div>
-				
-			</div>
-			<div class="step skip" data-scale="30" data-y="-7500" data-rotate="90" data-rotate-y="-30"></div>
-			
-			<div id="zhaowei-10" class="slide step" data-scale="0.44" data-x="2115" data-y="-7500" data-rotate="87.4">
-				<p class="title">美</p>
-				<img class="planet absolute" src="images/13 王明霞/王明霞-10.png" alt="Venus"/>
-				<div class="substep" data-timed="5"></div>
-				
-			</div>
-			<div id="zhaowei-11-skip" class="step skip" data-scale="10"></div>
-			<div id="zhaowei-11" class="slide step" data-x="5000" data-scale="0.46" data-x="2115" data-y="7500" data-rotate="-153.95">
-				<p class="title">秋</p>
-				<img class="planet absolute" src="images/13 王明霞/王明霞-11.png" alt="Earth"/>
-				<div class="substep" data-timed="5"></div>
-				
-			</div>
-			<div class="step skip" data-scale="10" data-y="-2500" data-rotate="180"></div>
-			<div id="zhaowei-12" class="slide step" data-scale="1.84" data-x="61795" data-y="5000" data-rotate="71.19" data-rotate-x="-15">
-				<p class="title">醉</p>
-				<img class="planet absolute" src="images/13 王明霞/王明霞-12.png" alt="Mars"/>
-				<div class="substep" data-timed="5"></div>
-			</div>
-
-		<!-- 第十二幅结束 -->
 
 
+
+        <!--   8 pictures -->
+        <div id="zhaowei" class="slide step" data-scale="0.18" data-x="2500" data-y="5000" data-rotate="0">
+            <p class="title">王明霞</p>
+            <img class="planet absolute" src="photo/13 王明霞/王明霞-01.png" alt="Mercury" />
+            <div class="substep" data-timed="5"></div>
+
+
+        </div>
+        <div class="step skip" data-scale="30" data-y="-7500" data-rotate="90" data-rotate-y="-30"></div>
+        <div id="zhaowei-02" class="slide step" data-scale="0.44" data-x="2115" data-y="-7500" data-rotate="87.4">
+            <p class="title">我们比楼高</p>
+            <img class="planet absolute" src="photo/13 王明霞/王明霞-02.png" alt="Venus" />
+            <div class="substep" data-timed="5"></div>
+
+
+        </div>
+        <div id="zhaowei-03-skip" class="step skip" data-scale="10"></div>
+        <div id="zhaowei-03" class="slide step" data-x="5000" data-scale="0.46" data-x="2115" data-y="7500" data-rotate="-153.95">
+            <p class="title">你们都在吃啥？</p>
+            <img class="planet absolute" src="photo/13 王明霞/王明霞-03.png" alt="Earth" />
+            <div class="substep" data-timed="5"></div>
+
+        </div>
+        <div class="step skip" data-scale="10" data-y="-2500" data-rotate="180"></div>
+        <div id="zhaowei-04" class="slide step" data-scale="0.24" data-x="3334" data-y="-2500" data-rotate="180.53" data-rotate-x="15">
+            <p class="title">小宝宝</p>
+            <img class="planet absolute" src="photo/13 王明霞/王明霞-04.png" alt="Mars" />
+            <div class="substep" data-timed="5"></div>
+
+        </div>
+        <div class="step skip" data-scale="10" data-y="-2500"></div>
+        <div id="zhaowei-05" class="slide step" data-scale="5.13" data-x="23589" data-y="-2500" data-rotate="-20.9" data-rotate-x="15">
+            <p class="title">淘气宝宝</p>
+            <img class="planet absolute" src="photo/13 王明霞/王明霞-05.png" alt="Jupiter" />
+            <div class="substep" data-timed="5"></div>
+
+
+        </div>
+
+        <div class="step skip" data-scale="10"></div>
+
+        <div id="zhaowei-06" class="slide step" data-scale="4.31" data-x="27821" data-y="-5000" data-rotate="23.65" data-rotate-x="-15">
+            <p class="title">累了</p>
+            <img class="planet" src="photo/13 王明霞/王明霞-06.png" alt="Saturn" />
+            <div class="substep" data-timed="5"></div>
+
+
+        </div>
+        <div class="step skip" data-scale="10"></div>
+        <div id="zhaowei-07" class="slide step" data-scale="1.84" data-x="61795" data-y="5000" data-rotate="71.19" data-rotate-x="-15">
+            <p class="title">花海</p>
+            <img class="planet" src="photo/13 王明霞/王明霞-07.png" alt="Uranus" style="z-index:0;" />
+            <div class="substep" data-timed="5"></div>
+
+        </div>
+        <div class="step skip" data-scale="10"></div>
+        <div id="zhaowei-08" class="slide step" data-scale="1.78" data-x="69743" data-y="5000" data-rotate="-69.12" data-rotate-x="0">
+            <p class="title">休息，休息一会儿</p>
+            <img class="planet" src="photo/13 王明霞/王明霞-08.png" alt="Neptune" />
+            <div class="substep" data-timed="5"></div>
+
+        </div>
+
+        <!-- 下面是第9幅图 -->
+        <div id="zhaowei-09" class="slide step" data-scale="0.18" data-x="2500" data-y="5000" data-rotate="0">
+            <p class="title">这个眼镜能看到海边</p>
+            <img class="planet absolute" src="photo/13 王明霞/王明霞-09.png" alt="Mercury" />
+            <div class="substep" data-timed="5"></div>
+
+        </div>
+        <div class="step skip" data-scale="30" data-y="-7500" data-rotate="90" data-rotate-y="-30"></div>
+
+        <div id="zhaowei-10" class="slide step" data-scale="0.44" data-x="2115" data-y="-7500" data-rotate="87.4">
+            <p class="title">美</p>
+            <img class="planet absolute" src="photo/13 王明霞/王明霞-10.png" alt="Venus" />
+            <div class="substep" data-timed="5"></div>
+
+        </div>
+        <div id="zhaowei-11-skip" class="step skip" data-scale="10"></div>
+        <div id="zhaowei-11" class="slide step" data-x="5000" data-scale="0.46" data-x="2115" data-y="7500" data-rotate="-153.95">
+            <p class="title">秋</p>
+            <img class="planet absolute" src="photo/13 王明霞/王明霞-11.png" alt="Earth" />
+            <div class="substep" data-timed="5"></div>
+
+        </div>
+        <div class="step skip" data-scale="10" data-y="-2500" data-rotate="180"></div>
+        <div id="zhaowei-12" class="slide step" data-scale="1.84" data-x="61795" data-y="5000" data-rotate="71.19" data-rotate-x="-15">
+            <p class="title">醉</p>
+            <img class="planet absolute" src="photo/13 王明霞/王明霞-12.png" alt="Mars" />
+            <div class="substep" data-timed="5"></div>
+        </div>
+
+        <!-- 第十二幅结束 -->
 
 
 
@@ -143,13 +143,15 @@
 
 
 
-	</div>
-	<script src="js/impress.js"></script>
-	<script src="js/impress-animations.js"></script>
-	<script>
-	var impress = impress();
-	impress.init();
 
-	</script>
+
+    </div>
+    <script src="js/impress.js"></script>
+    <script src="js/impress-animations.js"></script>
+    <script>
+        var impress = impress();
+        impress.init();
+    </script>
 </body>
+
 </html>

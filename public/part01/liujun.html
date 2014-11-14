@@ -1,121 +1,125 @@
 <!doctype html>
 <html>
-<head>
-	<meta charset="utf-8" />
-	<meta name="viewport" content="width=1024" />
-	<meta name="apple-mobile-web-app-capable" content="yes" />
-	<title>impress.js presentation</title>
-	<meta name="description" content="impress.js presentation" />
-	<meta name="author" content="Wojciech Michalak" />
 
-	<link href="css/base.css" rel="stylesheet" />
-	<link href="css/solar.css" rel="stylesheet" />
-	<link href="css/animations.css" rel="stylesheet" />
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=1024" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <title>impress.js presentation</title>
+    <meta name="description" content="impress.js presentation" />
+    <meta name="author" content="Wojciech Michalak" />
+
+    <link href="css/base.css" rel="stylesheet" />
+    <link href="css/solar.css" rel="stylesheet" />
+    <link href="css/animations.css" rel="stylesheet" />
 </head>
+
 <body>
 
-	<audio id="global_step_leave_effect">
-		<source src="sounds/flyby.wav" type="audio/wav">
-		</audio>
-		<audio id="global_step_enter_effect">
-			<source src="sounds/flyby_inverted.wav" type="audio/wav">
-			</audio>
-				<audio id="global_music_effect">
-		<source src="sounds/09完美世界.mp3" type="audio/wav">
-		</audio>
-		
+    <audio id="global_step_leave_effect">
+        <source src="sounds/flyby.wav" type="audio/wav">
+    </audio>
+    <audio id="global_step_enter_effect">
+        <source src="sounds/flyby_inverted.wav" type="audio/wav">
+    </audio>
+    <audio id="global_music_effect">
+        <source src="sounds/09完美世界.mp3" type="audio/wav">
+    </audio>
 
-						<audio id="global_substep_enter_effect">
-							<source src="sounds/Swoosh.wav" type="audio/wav">
-							</audio>
-							<div id="impress" data-rewrite="true" data-transition-duration="1000">
-			<!-- 
+
+    <audio id="global_substep_enter_effect">
+        <source src="sounds/Swoosh.wav" type="audio/wav">
+    </audio>
+    <div id="impress" data-rewrite="true" data-transition-duration="1000">
+        <!-- 
 				Slides with the "skip" class aren't slides but only serve as animation keyframes.
 			-->
-			
-
-			<div id="prepare" class="slide step" data-scale="30" data-y="-7500" data-rotate="90" data-rotate-y="-30"   data-timed="1"></div>
 
 
-			
-   <div id="yanxu" class="slide step" data-scale="0.5" data-x="2500" data-y="5000" data-rotate="0" >
-				<p class="title">刘军</p>
-				<img class="planet absolute" src="images/09 刘军/刘军-01.png" alt="Mercury"/>
-				<div class="substep" data-timed="1"></div>
-				<img class="planet absolute" src="images/09 刘军/刘军-01.png" alt="Mercury"/>
-				<div class="substep" data-timed="1"></div>
-				<div id="underhearts" class="substep" data-animation="swing_up"  data-timed="5">
-					大家 <span class="planets colorize">好！</span>.<br>
-					背景<span class="colorize redhot">是</span> <span class="planets colorize">人</span> <span class="colorize redhot">工。</span><br>
-					
-				</div>
-			</div>
-			<div class="step skip" data-scale="30" data-y="-7500" data-rotate="90" data-rotate-y="-30"></div>
-			
-			<div id="scene-g2-s2" class="slide step" data-scale="0.44" data-x="2115" data-y="-7500" data-rotate="87.4">
-				<p class="title">往日</p>
-				<img class="planet absolute" src="images/09 刘军/刘军-02.png" alt="Venus"/>
-				<div class="substep" data-timed="1"></div>
-				
-					<!-- 
-					<div class="floatleft substep inline" data-animation="spin_outer" data-timed="0"><img src="images/heart.png"/></div>
-					<div class="floatleft substep inline" data-animation="spin_inner" data-timed="0"><img src="images/heart.png"/></div>
-					<div class="floatright substep inline" data-animation="spin_outer" data-timed="0"><img src="images/heart.png"/></div>
-					<div class="floatright substep inline" data-animation="spin_inner" data-timed="0"><img src="images/heart.png"/></div>
-					 -->
-				<div id="underhearts" class="substep" data-animation="swing_up"  data-timed="5">
-					这 <span class="planets colorize">是</span>.<br>
-					梅<span class="colorize redhot">花</span> <span class="planets colorize">山</span> <span class="colorize redhot">？</span><br>
-					
-				</div>
-			</div>
-			<div id="scene-g2-s2-skip" class="step skip" data-scale="1"></div>
-			<div id="scene-g2-s3" class="slide step" data-x="5000" data-scale="0.46" data-x="2115" data-y="7500" data-rotate="-153.95">
-				<p class="title">小虎队</p>
-				<img class="planet absolute" src="images/09 刘军/刘军-03.png" alt="Earth"/>
-				<div class="substep" data-timed="1"></div>
-				<div id="underhearts" class="substep" data-animation="swing_up"  data-timed="5">
-					 <span class="planets colorize">又</span>,<br>
-					是<span class="colorize redhot">三</span> <span class="planets colorize">人</span>行<span class="colorize redhot">，何日再重聚？</span><br>
-					
-				</div>
-			</div>
-			<div class="step skip" data-scale="10" data-y="-2500" data-rotate="180"></div>
-			<div id="scene-g2-s4" class="slide step" data-scale="0.24" data-x="3334" data-y="-2500" data-rotate="180.53" data-rotate-x="15">
-				<p class="title">Friends</p>
-				<img class="planet absolute" src="images/09 刘军/刘军-04.png" alt="Mars"/>
-				<div class="substep" data-timed="1"></div>
-				
-				<div class="substep info" data-animation="spin_inner" data-timed="9">
-					右一：刘军； 左一：猴哥<br>
-					你的左还是谁的右？<br>
-					余：宋兵乙等知名不具
-					
-				</div>
-			</div>
-			<div class="step skip" data-scale="10" data-y="-2500"></div>
-			<div id="scene-g2-s5" class="slide step" data-scale="5.13" data-x="23589" data-y="-2500" data-rotate="-20.9" data-rotate-x="15">
-				<p class="title">室友</p>
-				<img class="planet absolute" src="images/09 刘军/刘军-05.png" alt="Jupiter"/>
-				<div class="substep" data-timed="1"></div>
-				<div class="substep info" data-animation="upside_down_flip" data-timed="2">
-					叁 <span class="enlarge">壹</span> 柒 <span class="solar colorize">室</span><br>
-					合影。 <div class="substep inline" data-animation="slow_entrance" data-timed="2">有新的么？</div><br>
-				</div>
-				<div class="substep" data-timed="5"></div>
-
-			</div>
-			<div class="step skip" data-scale="10"></div>
-	
+        <div id="prepare" class="slide step" data-scale="30" data-y="-7500" data-rotate="90" data-rotate-y="-30" data-timed="1"></div>
 
 
-	</div>
-	<script src="js/impress.js"></script>
-	<script src="js/impress-animations.js"></script>
-	<script>
-	var impress = impress();
-	impress.init();
 
-	</script>
+        <div id="yanxu" class="slide step" data-scale="0.5" data-x="2500" data-y="5000" data-rotate="0">
+            <p class="title">刘军</p>
+            <img class="planet absolute" src="photo/09 刘军/刘军-01.png" alt="Mercury" />
+            <div class="substep" data-timed="1"></div>
+            <img class="planet absolute" src="photo/09 刘军/刘军-01.png" alt="Mercury" />
+            <div class="substep" data-timed="1"></div>
+            <div id="underhearts" class="substep" data-animation="swing_up" data-timed="5">
+                大家 <span class="planets colorize">好！</span>.
+                <br>背景
+                <span class="colorize redhot">是</span>  <span class="planets colorize">人</span>  <span class="colorize redhot">工。</span>
+                <br>
+
+            </div>
+        </div>
+        <div class="step skip" data-scale="30" data-y="-7500" data-rotate="90" data-rotate-y="-30"></div>
+
+        <div id="scene-g2-s2" class="slide step" data-scale="0.44" data-x="2115" data-y="-7500" data-rotate="87.4">
+            <p class="title">往日</p>
+            <img class="planet absolute" src="photo/09 刘军/刘军-02.png" alt="Venus" />
+            <div class="substep" data-timed="1"></div>
+
+            <div id="underhearts" class="substep" data-animation="swing_up" data-timed="5">
+                这 <span class="planets colorize">是</span>.
+                <br>梅
+                <span class="colorize redhot">花</span>  <span class="planets colorize">山</span>  <span class="colorize redhot">？</span>
+                <br>
+
+            </div>
+        </div>
+        <div id="scene-g2-s2-skip" class="step skip" data-scale="1"></div>
+        <div id="scene-g2-s3" class="slide step" data-x="5000" data-scale="0.46" data-x="2115" data-y="7500" data-rotate="-153.95">
+            <p class="title">小虎队</p>
+            <img class="planet absolute" src="photo/09 刘军/刘军-03.png" alt="Earth" />
+            <div class="substep" data-timed="1"></div>
+            <div id="underhearts" class="substep" data-animation="swing_up" data-timed="5">
+                <span class="planets colorize">又</span>,
+                <br>是
+                <span class="colorize redhot">三</span>  <span class="planets colorize">人</span>行<span class="colorize redhot">，何日再重聚？</span>
+                <br>
+
+            </div>
+        </div>
+        <div class="step skip" data-scale="10" data-y="-2500" data-rotate="180"></div>
+        <div id="scene-g2-s4" class="slide step" data-scale="0.24" data-x="3334" data-y="-2500" data-rotate="180.53" data-rotate-x="15">
+            <p class="title">Friends</p>
+            <img class="planet absolute" src="photo/09 刘军/刘军-04.png" alt="Mars" />
+            <div class="substep" data-timed="1"></div>
+
+            <div class="substep info" data-animation="spin_inner" data-timed="9">
+                右一：刘军； 左一：猴哥
+                <br>你的左还是谁的右？
+                <br>余：宋兵乙等知名不具
+
+            </div>
+        </div>
+        <div class="step skip" data-scale="10" data-y="-2500"></div>
+        <div id="scene-g2-s5" class="slide step" data-scale="5.13" data-x="23589" data-y="-2500" data-rotate="-20.9" data-rotate-x="15">
+            <p class="title">室友</p>
+            <img class="planet absolute" src="photo/09 刘军/刘军-05.png" alt="Jupiter" />
+            <div class="substep" data-timed="1"></div>
+            <div class="substep info" data-animation="upside_down_flip" data-timed="2">
+                叁 <span class="enlarge">壹</span> 柒 <span class="solar colorize">室</span>
+                <br>合影。
+                <div class="substep inline" data-animation="slow_entrance" data-timed="2">有新的么？</div>
+                <br>
+            </div>
+            <div class="substep" data-timed="5"></div>
+
+        </div>
+        <div class="step skip" data-scale="10"></div>
+
+
+
+    </div>
+    <script src="js/impress.js"></script>
+    <script src="js/impress-animations.js"></script>
+    <script>
+        var impress = impress();
+        impress.init();
+    </script>
 </body>
+
 </html>
